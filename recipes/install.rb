@@ -1,3 +1,4 @@
+
 begin
   master_ip = private_recipe_ip("flink","jobmanager")
 rescue
