@@ -57,8 +57,8 @@ end
 bash "unpack_flink" do
     user "root"
     code <<-EOF
-    tar -xzf #{cached_filename} -C /tmp
-    mv /tmp/flink-#{node.flink.version} #{node.flink.dir}
+    tar -xzf #{cached_filename} -C #{Chef::Config[:file_cache_path]}
+    mv #{Chef::Config[:file_cache_path]}/flink-#{node.flink.version} #{node.flink.dir}
     if [ -L #{node.flink.dir}/flink  ; then
        rm -rf #{node.flink.dir}/flink
     fi
