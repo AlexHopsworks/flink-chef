@@ -4,8 +4,8 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'java'
-cookbook 'kagent', github: "AlexHopsworks/kagent-chef", branch: "local"
-cookbook 'hops', github: "AlexHopsworks/hops-hadoop-chef", branch: "local"
-cookbook 'ndb', github: "AlexHopsworks/ndb-chef", branch: "local"
+cookbook 'kagent', github: "AlexHopsworks/kagent-chef", branch: "vdcurrent"
+cookbook 'hops', github: "AlexHopsworks/hops-hadoop-chef", branch: "vdcurrent"
+cookbook 'ndb', github: "AlexHopsworks/ndb-chef", branch: "vdcurrent"
 
 
