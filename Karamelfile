@@ -6,6 +6,7 @@ dependencies:
   - recipe: flink::yarn
     global:
       - hops::dn
+      - hops::nm
   - recipe: flink::historyserver
     global:
       - flink::yarn
